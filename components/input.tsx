@@ -12,7 +12,7 @@ const Input: React.FC<InputProps> = ({ id, onChange, value, label, type }) => {
   return (
     <div className="relative">
       <input
-      onChange={onChange}
+        onChange={onChange}
         type={type}
         value={value}
         id={id}
