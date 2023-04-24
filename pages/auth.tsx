@@ -50,6 +50,12 @@ const Auth = () => {
     }
   }, [email, name, password, login]);
 
+  const test = async () => {
+    const something = await signIn("google", { callbackUrl: "/" });
+    console.log('something@@@@@', something);
+    // return signIn("github", { callbackUrl: "/" }).then(res => console.log('@@@@@res', res)).catch(err => console.log('@@@@@@@@errr', err));
+  }
+
   return (
     <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
       <div className="bg-black w-full h-full lg:bg-opacity-50">
